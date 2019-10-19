@@ -1,0 +1,29 @@
+<footer style="background-color: lightsteelblue; width:100%; font-size: 1.2rem; bottom: 0; left: 0; position: fixed;" class="border-top footer text-center small text-muted py-3">
+  <p style="color: mediumblue;" class="m-0">
+    Copyright &copy; 2016
+    <script>
+      new Date().getFullYear() > 2010 &&
+        document.write("-" + " " + new Date().getFullYear());
+    </script>
+    <a href="/" style="text-decoration: none; color: #02028a;" class="">DevConnections</a>. All rights reserved.
+  </p>
+</footer>
+
+<% if (user) { %>
+    <div id="chat-wrapper" class="chat-wrapper shadow border-left border-top border-right"></div>
+    <script src="/socket.io/socket.io.js"></script>
+<% } %>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+  integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+  integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script>
+  $('[data-toggle="tooltip"]').tooltip();
+</script>
+<script src="/main-bundled.js"></script>
+</body>
+
+</html>
